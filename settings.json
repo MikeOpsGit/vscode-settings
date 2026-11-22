@@ -168,6 +168,14 @@
         "workbench.view.scm",
       ]
     },
+    // Git Graph
+    {
+      "before": ["g"],
+      "after": ["<Esc>"],
+      "commands": [
+        "git-graph.view",
+      ]
+    },
   ],
   "vim.normalModeKeyBindings": [
     // Escape replacement
