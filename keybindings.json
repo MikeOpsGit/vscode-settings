@@ -61,7 +61,7 @@
       "command": "-git.unstageSelectedRanges",
       "when": "editorTextFocus && isInDiffEditor && isInDiffRightEditor && !operationInProgress && resourceScheme == 'git'"
     },
-    
+
   // * Commenting
     // * Added
     {
@@ -284,7 +284,7 @@
     //       "command": "cursorRight",
     //       "when": "textInputFocus"
     //     },
-        
+
     //     // * Selection Individual Letter
     //     {
     //       "key": "shift+alt+j",
@@ -398,7 +398,7 @@
       "command": "cursorWordPartRight",
       "when": "vim.mode != 'Visual'"
     },
-    
+
     // * Horizontal Selection
     {
       "key": "ctrl+h",
@@ -424,7 +424,7 @@
       "args": { "after": ["<leader>", "w"], "recursive": true },
       "when": "editorTextFocus && vim.mode == 'Visual'"
     },
-     
+
     // * Vertical Movement
     {
       "key": "alt+j",
@@ -436,7 +436,7 @@
       "command": "cursorUp",
       "when": "textInputFocus && vim.mode == 'Insert'"
     },
-    
+
     // * Move Lines Up / Down
     {
       "key": "ctrl+alt+k",
@@ -474,7 +474,7 @@
       "args": { "after": ["<c-v>"] },
       "when": "editorTextFocus && vim.mode == 'Visual'"
     },
-    
+
     // * Removed Keybinds
     {
       "key": "alt+j",

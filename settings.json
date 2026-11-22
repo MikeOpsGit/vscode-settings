@@ -137,12 +137,12 @@
 
   // Auto Hide
   "autoHide.autoHideAuxiliaryBar": false,
-  
+
   // WSL
   "security.allowedUNCHosts": [
     "wsl.localhost"
   ],
-  
+
   // MATLAB
   "MATLAB.installPath": "D:\\Programs\\Miscellaneous\\MATLAB\\R2026a",
   "MATLAB.signIn": true,
@@ -205,6 +205,14 @@
       "after": ["<Esc>"],
       "commands": [
         "workbench.view.scm",
+      ]
+    },
+    // Serial Monitor
+    {
+      "before": ["s", "m"],
+      "after": ["<Esc>"],
+      "commands": [
+        "workbench.view.extension.vscode-serial-monitor-tools",
       ]
     },
     // Git Graph
