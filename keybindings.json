@@ -128,11 +128,36 @@
       "key": "ctrl+shift+t",
       "command": "workbench.action.reopenClosedEditor"
     },
+    {
+      "key": "ctrl+t",
+      "command": "runCommands",
+      "args": {
+        "commands": [
+          "workbench.action.focusActiveEditorGroup",
+          "workbench.action.closeSidebar",
+          "workbench.action.closePanel"        
+        ]
+      }
+    },
 
     // * Removed
     {
       "key": "ctrl+f4",
       "command": "-workbench.action.closeActiveEditor"
+    },
+    {
+      "key": "ctrl+t",
+      "command": "-workbench.action.showAllSymbols"
+    },
+    {
+      "key": "ctrl+t",
+      "command": "-kilo-code.new.agentManager.newSideTerminal",
+      "when": "kilo-code.new.agentManagerSideTerminalFocused && activeWebviewPanelId == 'kilo-code.new.AgentManagerPanel'"
+    },
+    {
+      "key": "ctrl+t",
+      "command": "-kilo-code.new.agentManager.newTab",
+      "when": "!kilo-code.new.agentManagerSideTerminalFocused && activeWebviewPanelId == 'kilo-code.new.AgentManagerPanel'"
     },
 
   // LEGACY MOVEMENT BINDINGS
