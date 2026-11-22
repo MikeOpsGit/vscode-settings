@@ -5,6 +5,7 @@
   "window.zoomLevel": 1,
   "explorer.confirmDragAndDrop": false,
   "search.useIgnoreFiles": true,
+  "diffEditor.ignoreTrimWhitespace": true,
   "terminal.integrated.commandsToSkipShell": [
     "kilo-code.new.agentManagerOpen",
     "kilo-code.new.agentManager.showTerminal",
