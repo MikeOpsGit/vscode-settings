@@ -232,6 +232,11 @@
         "workbench.view.extension.log-viewer",
       ]
     },
+    // Escape replacement
+    {
+      "before": ["<c-j>"],
+      "commands": ["extension.vim_escape"]
+    },
   ],
   "vim.normalModeKeyBindings": [
     // Escape replacement
