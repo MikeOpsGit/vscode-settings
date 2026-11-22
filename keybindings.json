@@ -352,14 +352,14 @@
   // VIM MOVEMENT BINDINGS
     // * Horizontal Movement
     {
-      "key": "shift+h",
+      "key": "ctrl+h",
       "command": "cursorLeft",
-      "when": "textInputFocus && vim.mode != 'Visual'"
+      "when": "textInputFocus && vim.mode == 'Insert'"
     },
     {
-      "key": "shift+l",
+      "key": "ctrl+l",
       "command": "cursorRight",
-      "when": "textInputFocus && vim.mode != 'Visual'"
+      "when": "textInputFocus && vim.mode == 'Insert'"
     },
     {
       "key": "alt+h",
