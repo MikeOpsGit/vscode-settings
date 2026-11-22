@@ -398,7 +398,7 @@
       "command": "cursorWordPartRight",
       "when": "vim.mode != 'Visual'"
     },
-
+    
     // * Horizontal Selection
     {
       "key": "ctrl+h",
@@ -424,7 +424,19 @@
       "args": { "after": ["<leader>", "w"], "recursive": true },
       "when": "editorTextFocus && vim.mode == 'Visual'"
     },
-
+     
+    // * Vertical Movement
+    {
+      "key": "alt+j",
+      "command": "cursorDown",
+      "when": "textInputFocus && vim.mode == 'Insert'"
+    },
+    {
+      "key": "alt+k",
+      "command": "cursorUp",
+      "when": "textInputFocus && vim.mode == 'Insert'"
+    },
+    
     // * Move Lines Up / Down
     {
       "key": "ctrl+alt+k",
