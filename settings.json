@@ -4,6 +4,7 @@
   "workbench.colorTheme": "Default High Contrast",
   "window.zoomLevel": 1,
   "explorer.confirmDragAndDrop": false,
+  "search.useIgnoreFiles": true,
 
   // Terminal
   "terminal.integrated.defaultProfile.windows": "PowerShell",
@@ -158,6 +159,37 @@
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": true,
   "vim.commandLineModeKeyBindings": [
+    // Search use Ignore
+    {
+      "before": ["i", "o", "n"],
+      "after": ["<Esc>"],
+      "commands": [
+        {
+          "command": "toggle",
+          "args": {
+            "id": "useIgnoreFilesOn",
+            "value": [
+              { "search.useIgnoreFiles": true }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "before": ["i", "o", "f", "f"],
+      "after": ["<Esc>"],
+      "commands": [
+        {
+          "command": "toggle",
+          "args": {
+            "id": "useIgnoreFilesOff",
+            "value": [
+              { "search.useIgnoreFiles": false }
+            ]
+          }
+        }
+      ]
+    },
     // SCM sidebar
     {
       "before": ["g", "s"],
