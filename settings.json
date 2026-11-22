@@ -224,8 +224,21 @@
         }
       ]
     },
+    // Git Status
     {
       "before": ["g", "s"],
+      "after": ["<Esc>"],
+      "commands": [
+        "workbench.action.terminal.focus",
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": { "text": "git status\r\n" }
+        }
+      ]
+    },
+    // SCM sidebar
+    {
+      "before": ["g", "w"],
       "after": ["<Esc>"],
       "commands": [
         "workbench.view.scm",
