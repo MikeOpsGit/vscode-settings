@@ -161,46 +161,55 @@
   "vim.useCtrlKeys": true,
   "vim.timeout": 200,
   "vim.normalModeKeyBindings": [
+    // Escape replacement
     {
       "before": ["<c-j>"],
-      "commands": ["extension.vim_escape"] // Escape replacement
+      "commands": ["extension.vim_escape"]
     },
   ],
   "vim.insertModeKeyBindings": [
+    // Escape replacement
     {
       "before": ["<c-j>"],
-      "commands": ["extension.vim_escape"] // Escape replacement
+      "commands": ["extension.vim_escape"]
     }
   ],
   "vim.visualModeKeyBindings": [
+    // Word Part Left Select
     {
       "before": ["<c-a-h>"],
-      "after": ["<leader>", "b"] // Word Part Left Select
+      "after": ["<leader>", "b"]
     },
+    // Word Part Right Select,
     {
       "before": ["<c-a-l>"],
-      "after": ["<leader>", "w"] // Word Part Right Select
+      "after": ["<leader>", "w"]
     },
+    // Word Left Select,
     {
       "before": ["<a-h>"],
-      "after": ["b"] // Word Left Select
+      "after": ["b"]
     },
+    // Word Left Select,
     {
       "before": ["<a-l>"],
-      "after": ["e"] // Word Left Select
+      "after": ["e"]
     },
-    {
-      "before": ["<c-j>"],
-      "commands": ["extension.vim_escape"] // Escape replacement
-    },
+    // Repeat indent after mouse selection,
     {
       "before": [">"],
-      "after": [">", "g", "v"] // Repeat indent after mouse selection
+      "after": [">", "g", "v"]
     },
+    // Repeat outdent after mouse selection,
     {
       "before": ["<"],
-      "after": ["<", "g", "v"] // Repeat outdent after mouse selection
-    }
+      "after": ["<", "g", "v"]
+    },
+    // Escape replacement
+    {
+      "before": ["<c-j>"],
+      "commands": ["extension.vim_escape"]
+    },
   ],
   "vim.leader": "<space>",
   "vim.handleKeys": { // Regained Vanilla function    | Lost Vim function             | Reason                                    |
