@@ -200,6 +200,18 @@
         }
       ]
     },
+    // Git Push
+    {
+      "before": ["g", "p"],
+      "after": ["<Esc>"],
+      "commands": [
+        "workbench.action.terminal.focus",
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": { "text": "git push\r\n" }
+        }
+      ]
+    },
     // SCM sidebar
     {
       "before": ["g", "s"],
