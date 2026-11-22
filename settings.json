@@ -1,0 +1,226 @@
+{
+  // Miscellaneous
+  "editor.tabSize": 2,
+  "workbench.colorTheme": "Default High Contrast",
+  "window.zoomLevel": 1,
+  "explorer.confirmDragAndDrop": false,
+
+  // Terminal
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+
+    "Git": {
+      "path": "C:\\Users\\mmarais\\My_Software_Installs\\Git\\bin\\bash.exe",
+      "overrideName": true
+    },
+  },
+
+  // Better Comments
+  "better-comments.tags": [
+    {
+      "tag": "note",
+      "color": "#03c8ff",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false            
+    },
+    {
+      "tag": "!",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "?",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "//",
+      "color": "#474747",
+      "strikethrough": true,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "*",
+      "color": "#98C379",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    }
+  ],
+
+  // SSH
+  "remote.SSH.remotePlatform": {
+    "UNIMATRIX-ONE": "windows",
+    "Home-PC": "windows",
+    "192.168.0.138": "linux",
+    "10.131.140.68": "linux",
+    "10.131.136.95": "linux",
+    "10.143.200.20": "linux",
+    "10.131.140.209": "linux",
+    "10.131.140.10": "linux",
+    "192.168.190.212": "linux",
+    "10.143.196.40": "linux",
+    "10.143.140.10": "linux",
+    "Cameron-Pi": "linux",
+    "EPIC-Pi": "linux",
+    "otherspotpi": "linux",
+    "192.168.0.139": "linux",
+    "spotpi": "linux",
+    "10.16.26.226": "linux"
+  },
+  "remote.autoForwardPortsSource": "hybrid",
+
+  // Python
+  "jupyter.interactiveWindow.creationMode": "perFile",
+  "[python]": {
+    "diffEditor.ignoreTrimWhitespace": false
+  },
+  "python.defaultInterpreterPath": "c:\\Program Files\\Python313\\python.exe",
+
+  // AHK
+  "AHK++.v1.file": {
+    "helpPath": "C:/Program Files (x86)/Steam/steamapps/common/Autohotkey/AutoHotkey.chm",
+    "interpreterPath": "C:/Program Files (x86)/Steam/steamapps/common/Autohotkey/AutoHotkeyU64.exe"
+  },
+  "AHK++.compiler": {
+    "compilerPath": "C:/Program Files (x86)/Steam/steamapps/common/Autohotkey/Compiler/Ahk2Exe.exe"
+  },
+  "AHK++.v2.file": {
+    "helpPath": "C:/Program Files (x86)/Steam/steamapps/common/Autohotkey/v2/AutoHotkey.chm",
+    "maxScanDepth": 2,
+    "interpreterPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Autohotkey\\v2\\AutoHotkey64.exe"
+  },
+
+  // Auto Hide
+  "autoHide.autoHideAuxiliaryBar": false,
+  
+  // WSL
+  "security.allowedUNCHosts": [
+    "wsl.localhost"
+  ],
+  
+  // MATLAB
+  "MATLAB.installPath": "D:\\Programs\\Miscellaneous\\MATLAB\\R2026a",
+  "MATLAB.signIn": true,
+  "MATLAB.startDebuggerAutomatically": true,
+  "MATLAB.telemetry": false,
+
+  // AI
+    // Copilot
+    "github.copilot.enable": {
+      "*": true,
+      "plaintext": false,
+      "markdown": false,
+      "scminput": false
+    },
+    "chat.viewSessions.orientation": "stacked",
+
+  // VIM
+  "vim.camelCaseMotion.enable": true,
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.timeout": 200,
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<c-j>"],
+      "commands": ["extension.vim_escape"] // Escape replacement
+    },
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["<c-j>"],
+      "commands": ["extension.vim_escape"] // Escape replacement
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["<c-a-h>"],
+      "after": ["<leader>", "b"] // Word Part Left Select
+    },
+    {
+      "before": ["<c-a-l>"],
+      "after": ["<leader>", "w"] // Word Part Right Select
+    },
+    {
+      "before": ["<a-h>"],
+      "after": ["b"] // Word Left Select
+    },
+    {
+      "before": ["<a-l>"],
+      "after": ["e"] // Word Left Select
+    },
+    {
+      "before": ["<c-j>"],
+      "commands": ["extension.vim_escape"] // Escape replacement
+    },
+    {
+      "before": [">"],
+      "after": [">", "g", "v"] // Repeat indent after mouse selection
+    },
+    {
+      "before": ["<"],
+      "after": ["<", "g", "v"] // Repeat outdent after mouse selection
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": { // Regained Vanilla function    | Lost Vim function             | Reason                                    |
+                      // ---------------------------- | ----------------------------- | ----------------------------------------- |
+    "<C-a>": false,   // Select all                   | Increment selected number     | simpy cw instead.                         |
+    "<C-f>": false,   // find                         | Scroll down page              | I use my mouse instead for code browsing. |
+    "<C-e>": false,   // line comment                 | Scroll down 1 line            | I use my mouse instead for code browsing. |
+    "<C-k>": false,   // Quick Bar                    | Vim Digraphs (symbol insert)  | I use alt+numpad instead.                 |
+    "<C-w>": false,   // Close tab                    | Change focused split window   | I use my mouse instead for code browsing. |
+    "<C-d>": false,   // Select Matching Words lines  | Scroll down 1/2 page          | I use my mouse instead for code browsing. |
+    "<C-x>": false,   // Cut selection                | Decrement selected number     | simply cw instead.                        |
+    "<C-c>": false,   // Copy selection               | Return to Normal Mode         | I use ctrl + j instead.                   |
+    "<C-v>": false,   // Paste                        | Visual Block Mode             | I use MMB instead.                        |
+  },
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  "editor.lineNumbers": "relative",
+  "editor.cursorSurroundingLines": 5,
+  "editor.cursorSurroundingLinesStyle": "all",
+
+  // NEW
+}
