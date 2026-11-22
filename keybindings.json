@@ -10,6 +10,23 @@
     "key": "alt+w",
     "command": "editor.debug.action.selectionToWatch"
   },
+  {
+    "key": "ctrl+alt+a",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        {
+          "command": "editor.action.insertSnippet",
+          "args": {
+            "snippet": "${TM_SELECTED_TEXT}+${CURSOR_INDEX}"
+          }
+        },
+        {
+          "command": "editor.emmet.action.evaluateMathExpression"
+        }
+      ]
+    }
+  },
 
   // * Git
     // * Added
