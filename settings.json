@@ -5,6 +5,13 @@
   "window.zoomLevel": 1,
   "explorer.confirmDragAndDrop": false,
   "search.useIgnoreFiles": true,
+  "terminal.integrated.commandsToSkipShell": [
+    "kilo-code.new.agentManagerOpen",
+    "kilo-code.new.agentManager.showTerminal",
+    "kilo-code.new.agentManager.previousTerminal",
+    "kilo-code.new.agentManager.nextTerminal",
+    "matlab.interrupt"
+  ],
 
   // Terminal
   "terminal.integrated.defaultProfile.windows": "PowerShell",
@@ -151,6 +158,8 @@
       "scminput": false
     },
     "chat.viewSessions.orientation": "stacked",
+    // Kilo Code
+    "kilo-code.new.agentWorkStyle": "skipped",
 
   // VIM
   "vim.camelCaseMotion.enable": true,
@@ -229,32 +238,32 @@
       "commands": ["extension.vim_escape"]
     }
   ],
-  "vim.visualModeKeyBindings": [
+  "vim.visualModeKeyBindings": [ 
     // Word Part Left Select
     {
       "before": ["<c-a-h>"],
       "after": ["<leader>", "b"]
-    },
+    }, 
     // Word Part Right Select,
     {
       "before": ["<c-a-l>"],
       "after": ["<leader>", "w"]
-    },
+    }, 
     // Word Left Select,
     {
       "before": ["<a-h>"],
       "after": ["b"]
-    },
+    }, 
     // Word Left Select,
     {
       "before": ["<a-l>"],
       "after": ["e"]
-    },
+    }, 
     // Repeat indent after mouse selection,
     {
       "before": [">"],
       "after": [">", "g", "v"]
-    },
+    }, 
     // Repeat outdent after mouse selection,
     {
       "before": ["<"],
