@@ -212,17 +212,17 @@
     },
   ],
   "vim.leader": "<space>",
-  "vim.handleKeys": { // Regained Vanilla function    | Lost Vim function             | Reason                                    |
-                      // ---------------------------- | ----------------------------- | ----------------------------------------- |
-    "<C-a>": false,   // Select all                   | Increment selected number     | simpy cw instead.                         |
-    "<C-f>": false,   // find                         | Scroll down page              | I use my mouse instead for code browsing. |
-    "<C-e>": false,   // line comment                 | Scroll down 1 line            | I use my mouse instead for code browsing. |
-    "<C-k>": false,   // Quick Bar                    | Vim Digraphs (symbol insert)  | I use alt+numpad instead.                 |
-    "<C-w>": false,   // Close tab                    | Change focused split window   | I use my mouse instead for code browsing. |
-    "<C-d>": false,   // Select Matching Words lines  | Scroll down 1/2 page          | I use my mouse instead for code browsing. |
-    "<C-x>": false,   // Cut selection                | Decrement selected number     | simply cw instead.                        |
-    "<C-c>": false,   // Copy selection               | Return to Normal Mode         | I use ctrl + j instead.                   |
-    "<C-v>": false,   // Paste                        | Visual Block Mode             | I use MMB instead.                        |
+  "vim.handleKeys": { // Regained Vanilla function    | Lost Vim function             | Reason                                              |
+                      // ---------------------------- | ----------------------------- | --------------------------------------------------- |
+    "<C-a>": false,   // Select all                   | Increment selected number     | simpy cw instead.                                   |
+    "<C-f>": false,   // find                         | Scroll down page              | I use my mouse instead for code browsing.           |
+    "<C-e>": false,   // line comment                 | Scroll down 1 line            | I use my mouse instead for code browsing.           |
+    "<C-k>": false,   // Quick Bar                    | Vim Digraphs (symbol insert)  | I use alt+numpad instead.                           |
+    "<C-w>": false,   // Close tab                    | Change focused split window   | I use my mouse instead for code browsing.           |
+    "<C-d>": false,   // Select Matching Words lines  | Scroll down 1/2 page          | I use my mouse instead for code browsing.           |
+    "<C-x>": false,   // Cut selection                | Decrement selected number     | simply cw instead.                                  |
+    "<C-c>": false,   // Copy selection               | Return to Normal Mode         | I use ctrl + j instead.                             |
+    "<C-v>": false,   // Paste                        | Visual Block Mode             | Now its v + <ctrl + v> to enter visual block mode.  |
   },
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1

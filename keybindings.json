@@ -438,6 +438,14 @@
       "when": "editorTextFocus && vim.active && !inDebugRepl"
     },
     
+    // * Block Mode Rebind
+    {
+      "key": "ctrl+v",
+      "command": "vim.remap",
+      "args": { "after": ["<c-v>"] },
+      "when": "editorTextFocus && vim.mode == 'Visual'"
+    },
+    
     // * Removed Keybinds
     {
       "key": "alt+j",
