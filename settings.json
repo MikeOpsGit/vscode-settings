@@ -156,7 +156,7 @@
   "vim.camelCaseMotion.enable": true,
   "vim.easymotion": true,
   "vim.incsearch": true,
-  "vim.useSystemClipboard": true,
+  "vim.useSystemClipboard": false,
   "vim.useCtrlKeys": true,
   "vim.commandLineModeKeyBindings": [
     // Search use Ignore
