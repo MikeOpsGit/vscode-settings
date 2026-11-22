@@ -269,6 +269,11 @@
       "before": ["<"],
       "after": ["<", "g", "v"]
     },
+    // Paste and replace (without storing replaced text in buffer)
+    {
+      "before": ["<leader>", "p"],
+      "after": ["\"", "_", "d", "p"]
+    },
     // Escape replacement
     {
       "before": ["<c-j>"],
