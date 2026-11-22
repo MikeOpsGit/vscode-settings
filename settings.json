@@ -212,7 +212,18 @@
         }
       ]
     },
-    // SCM sidebar
+    // Git amend
+    {
+      "before": ["g", "a", "m"],
+      "after": ["<Esc>"],
+      "commands": [
+        "workbench.action.terminal.focus",
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": { "text": "git commit -a --amend\r\n" }
+        }
+      ]
+    },
     {
       "before": ["g", "s"],
       "after": ["<Esc>"],
