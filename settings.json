@@ -159,7 +159,16 @@
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": true,
-  "vim.timeout": 200,
+  "vim.commandLineModeKeyBindings": [
+    // SCM sidebar
+    {
+      "before": ["g", "s"],
+      "after": ["<Esc>"],
+      "commands": [
+        "workbench.view.scm",
+      ]
+    },
+  ],
   "vim.normalModeKeyBindings": [
     // Escape replacement
     {
