@@ -11,6 +11,40 @@
     "command": "editor.debug.action.selectionToWatch"
   },
 
+  // * Git
+    // * Added
+    {
+      "key": "ctrl+alt+z",
+      "command": "git.revertSelectedRanges",
+      "when": "editorTextFocus && !operationInProgress && resourceScheme == 'file'"
+    },
+    {
+    "key": "ctrl+alt+s",
+    "command": "git.stageSelectedRanges",
+    "when": "editorTextFocus && !operationInProgress && resourceScheme == 'file'"
+    },
+    {
+      "key": "ctrl+shift+alt+s",
+      "command": "git.unstageSelectedRanges",
+      "when": "editorTextFocus && isInDiffEditor && isInDiffRightEditor && !operationInProgress && resourceScheme == 'git'"
+    },
+    // * Removed
+    {
+      "key": "ctrl+k ctrl+r",
+      "command": "-git.revertSelectedRanges",
+      "when": "editorTextFocus && !operationInProgress && resourceScheme == 'file'"
+    },
+    {
+      "key": "ctrl+k ctrl+alt+s",
+      "command": "-git.stageSelectedRanges",
+      "when": "editorTextFocus && !operationInProgress && resourceScheme == 'file'"
+    },
+    {
+      "key": "ctrl+k ctrl+n",
+      "command": "-git.unstageSelectedRanges",
+      "when": "editorTextFocus && isInDiffEditor && isInDiffRightEditor && !operationInProgress && resourceScheme == 'git'"
+    },
+    
   // * Commenting
     // * Added
     {
