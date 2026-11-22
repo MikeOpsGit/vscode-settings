@@ -369,22 +369,22 @@
   // VIM MOVEMENT BINDINGS
     // * Horizontal Movement
     {
-      "key": "ctrl+h",
+      "key": "alt+h",
       "command": "cursorLeft",
       "when": "textInputFocus && vim.mode == 'Insert'"
     },
     {
-      "key": "ctrl+l",
+      "key": "alt+l",
       "command": "cursorRight",
       "when": "textInputFocus && vim.mode == 'Insert'"
     },
     {
-      "key": "alt+h",
+      "key": "ctrl+h",
       "command": "cursorWordLeft",
       "when": "textInputFocus && !accessibilityModeEnabled && vim.mode != 'Visual'"
     },
     {
-      "key": "alt+l",
+      "key": "ctrl+l",
       "command": "cursorWordEndRight",
       "when": "textInputFocus && !accessibilityModeEnabled && vim.mode != 'Visual'"
     },
@@ -401,13 +401,13 @@
 
     // * Horizontal Selection
     {
-      "key": "alt+h",
+      "key": "ctrl+h",
       "command": "vim.remap",
       "args": { "after": ["b"] },
       "when": "editorTextFocus && vim.mode == 'Visual'"
     },
     {
-      "key": "alt+l",
+      "key": "ctrl+l",
       "command": "vim.remap",
       "args": { "after": ["e"] },
       "when": "editorTextFocus && vim.mode == 'Visual'"
