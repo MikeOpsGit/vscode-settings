@@ -176,6 +176,14 @@
         "git-graph.view",
       ]
     },
+    // log Viewer
+    {
+      "before": ["l", "o", "g"],
+      "after": ["<Esc>"],
+      "commands": [
+        "workbench.view.extension.log-viewer",
+      ]
+    },
   ],
   "vim.normalModeKeyBindings": [
     // Escape replacement
