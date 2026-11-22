@@ -254,7 +254,7 @@
     },
     // Git Graph
     {
-      "before": ["g"],
+      "before": ["g", "g"],
       "after": ["<Esc>"],
       "commands": [
         "git-graph.view",
