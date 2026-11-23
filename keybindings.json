@@ -476,17 +476,14 @@
     {
       "key": "escape",
       "command": "-extension.vim_escape",
-      "when": "textInputFocus && vim.active"
     },
     {
       "key": "ctrl+u",
       "command": "-extension.vim_ctrl+u",
-      "when": "textInputFocus && vim.active"
     },
     {
       "key": "ctrl+d",
       "command": "-extension.vim_ctrl+d",
-      "when": "textInputFocus && vim.active"
     },
 
     // * Block Mode Rebind
@@ -501,6 +498,11 @@
     {
       "key": "alt+j",
       "command": "-supermaven.newConversationTab"
+    },
+    {
+      "key": "ctrl+u",
+      "command": "-cursorUndo",
+      "when": "textInputFocus"
     },
 
   // NEW
