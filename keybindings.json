@@ -371,32 +371,32 @@
     {
       "key": "alt+h",
       "command": "cursorLeft",
-      "when": "textInputFocus && vim.mode == 'Insert'"
+      "when": "textInputFocus && vim.active && vim.mode == 'Insert'"
     },
     {
       "key": "alt+l",
       "command": "cursorRight",
-      "when": "textInputFocus && vim.mode == 'Insert'"
+      "when": "textInputFocus && vim.active && vim.mode == 'Insert'"
     },
     {
       "key": "ctrl+h",
       "command": "cursorWordLeft",
-      "when": "textInputFocus && !accessibilityModeEnabled && vim.mode != 'Visual'"
+      "when": "textInputFocus && vim.active && vim.mode != 'Visual'"
     },
     {
       "key": "ctrl+l",
       "command": "cursorWordEndRight",
-      "when": "textInputFocus && !accessibilityModeEnabled && vim.mode != 'Visual'"
+      "when": "textInputFocus && vim.active && vim.mode != 'Visual'"
     },
     {
       "key":"ctrl+alt+h",
       "command": "cursorWordPartLeft",
-      "when": "vim.mode != 'Visual'"
+      "when": "textInputFocus && vim.active && vim.mode != 'Visual'"
     },
     {
       "key":"ctrl+alt+l",
       "command": "cursorWordPartRight",
-      "when": "vim.mode != 'Visual'"
+      "when": "textInputFocus && vim.active && vim.mode != 'Visual'"
     },
 
     // * Horizontal Selection
@@ -405,89 +405,88 @@
       "key": "ctrl+h",
       "command": "vim.remap",
       "args": { "after": ["b"] }, // Word Left
-      "when": "editorTextFocus && vim.mode == 'Visual'"
+      "when": "textInputFocus && vim.active && vim.mode == 'Visual'"
     },
     {
       "key": "ctrl+l",
       "command": "vim.remap",
       "args": { "after": ["e"] }, // Word Right
-      "when": "editorTextFocus && vim.mode == 'Visual'"
+      "when": "textInputFocus && vim.active && vim.mode == 'Visual'"
     },
     {
       "key": "ctrl+alt+h",
       "command": "vim.remap",
       "args": { "after": ["<leader>", "b"]}, // Word Part Left
-      "when": "editorTextFocus && vim.mode == 'Visual'"
+      "when": "textInputFocus && vim.active && vim.mode == 'Visual'"
     },
     {
       "key": "ctrl+alt+l",
       "command": "vim.remap",
       "args": { "after": ["<leader>", "w"]}, // Word Part Right
-      "when": "editorTextFocus && vim.mode == 'Visual'"
+      "when": "textInputFocus && vim.active && vim.mode == 'Visual'"
     },
 
     // * Vertical Movement
-      // Added
-      {
-        "key": "alt+j",
-        "command": "cursorDown",
-        "when": "textInputFocus && vim.mode == 'Insert'"
-      },
-      {
-        "key": "alt+k",
-        "command": "cursorUp",
-        "when": "textInputFocus && vim.mode == 'Insert'"
-      },
-      {
-        "key": "pagedown",
-        "command": "extension.vim_ctrl+d",
-        "when": "editorTextFocus && vim.active"
-      },
-      {
-        "key": "pageup",
-        "command": "extension.vim_ctrl+u",
-        "when": "editorTextFocus && vim.active"
-      },
-      // Removed
-      {
-        "key": "ctrl+u",
-        "command": "-extension.vim_ctrl+u",
-        "when": "editorTextFocus && vim.active"
-      },
-      {
-        "key": "ctrl+d",
-        "command": "-extension.vim_ctrl+d",
-        "when": "editorTextFocus && vim.active"
-      },
+    {
+      "key": "alt+j",
+      "command": "cursorDown",
+      "when": "textInputFocus && vim.active && vim.mode == 'Insert'"
+    },
+    {
+      "key": "alt+k",
+      "command": "cursorUp",
+      "when": "textInputFocus && vim.active && vim.mode == 'Insert'"
+    },
+    {
+      "key": "pagedown",
+      "command": "extension.vim_ctrl+d",
+      "when": "textInputFocus && vim.active"
+    },
+    {
+      "key": "pageup",
+      "command": "extension.vim_ctrl+u",
+      "when": "textInputFocus && vim.active"
+    },
 
     // * Move Lines Up / Down
     {
       "key": "ctrl+alt+k",
       "command": "editor.action.moveLinesUpAction",
-      "when": "editorTextFocus && !editorReadonly"
+      "when": "textInputFocus && !editorReadonly && vim.active"
     },
     {
       "key": "ctrl+alt+j",
-      "command": "editor.action.moveLinesDownAction"
+      "command": "editor.action.moveLinesDownAction",
+      "when": "textInputFocus && !editorReadonly && vim.active"
     },
 
     // * Copy Lines Up / Down
     {
       "key": "ctrl+shift+alt+j",
       "command": "editor.action.copyLinesDownAction",
-      "when": "editorTextFocus && !editorReadonly"
+      "when": "textInputFocus && !editorReadonly && vim.active"
     },
     {
       "key": "ctrl+shift+alt+k",
       "command": "editor.action.copyLinesUpAction",
-      "when": "editorTextFocus && !editorReadonly"
+      "when": "textInputFocus && !editorReadonly && vim.active"
     },
 
-    // * Removed Habits
+    // * Unbound Vim Keys
     {
       "key": "escape",
       "command": "-extension.vim_escape",
-      "when": "editorTextFocus && vim.active && !inDebugRepl"
+      "when": "textInputFocus && vim.active"
+    },
+    {
+      "key": "ctrl+u",
+      "command": "-extension.vim_ctrl+u",
+      "when": "textInputFocus && vim.active"
+    },
+    {
+      "key": "ctrl+d",
+      "command": "-extension.vim_ctrl+d",
+      "when": "textInputFocus && vim.active"
     },
 
     // * Block Mode Rebind
@@ -495,7 +494,7 @@
       "key": "ctrl+v",
       "command": "vim.remap",
       "args": { "after": ["<c-v>"] },
-      "when": "editorTextFocus && vim.mode == 'Visual'"
+      "when": "textInputFocus && vim.active && vim.mode == 'Visual'"
     },
 
     // * Removed Keybinds
