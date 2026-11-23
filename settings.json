@@ -214,7 +214,7 @@
     },
     // Git Push Force
     {
-      "before": ["g", "p", "f"],
+      "before": ["g", "f", "p"],
       "after": ["<Esc>"],
       "commands": [
         "workbench.action.terminal.focus",
