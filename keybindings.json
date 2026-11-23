@@ -422,7 +422,7 @@
     {
       "key": "ctrl+alt+l",
       "command": "vim.remap",
-      "args": { "after": ["<leader>", "w"]}, // Word Part Right
+      "args": { "after": ["<leader>", "e"]}, // Word Part Right
       "when": "textInputFocus && vim.active && vim.mode == 'Visual'"
     },
 
