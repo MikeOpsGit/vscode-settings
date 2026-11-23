@@ -237,7 +237,7 @@
       ]
     },
     {
-      "before": ["g", "a", "m", "a"],
+      "before": ["g", "a", "a", "m"],
       "after": ["<Esc>"],
       "commands": [
         "workbench.action.terminal.focus",
