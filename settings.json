@@ -334,16 +334,19 @@
     },
   ],
   "vim.leader": "<space>",
-  "vim.handleKeys": { // Regained Vanilla function    | Lost Vim function             | Reason                                              |
-                      // ---------------------------- | ----------------------------- | --------------------------------------------------- |
-    "<C-a>": false,   // Select all                   | Increment selected number     | simpy cw or ctrl + alt + a instead.                 |
-    "<C-f>": false,   // find                         | Scroll down page              | I use my mouse instead for code browsing.           |
-    "<C-e>": false,   // line comment                 | Scroll down 1 line            | I use my mouse instead for code browsing.           |
-    "<C-k>": false,   // Quick Bar                    | Vim Digraphs (symbol insert)  | I use alt+numpad instead.                           |
-    "<C-w>": false,   // Close tab                    | Change focused split window   | I use my mouse instead for code browsing.           |
-    "<C-x>": false,   // Cut selection                | Decrement selected number     | simply cw instead.                                  |
-    "<C-c>": false,   // Copy selection               | Return to Normal Mode         | I use ctrl + j instead.                             |
-    "<C-v>": false,   // Paste                        | Visual Block Mode             | Now its v + <ctrl + v> to enter visual block mode.  |
+  "vim.handleKeys": {     //  | Regained Vanilla Function         | Lost Vim Function             | Reason                                              |
+                          //  | --------------------------------- | ----------------------------- | --------------------------------------------------- |
+    "<C-a>": false,       //  | Select all                        | Increment selected number     | simpy cw or ctrl + alt + a instead.                 |
+    "<C-f>": false,       //  | find                              | Scroll down page              | Use Page Up/Pagedown instead.                       |
+    "<C-e>": false,       //  | line comment                      | Scroll down 1 line            | Use Page Up/Pagedown instead.                       |
+    "<C-k>": false,       //  | Quick Bar                         | Vim Digraphs (symbol insert)  | I use alt+numpad instead.                           |
+    "<C-w>": false,       //  | Close tab                         | Change focused split window   | For now I'll just have to use my mouse.             |
+    "<C-x>": false,       //  | Cut selection                     | Decrement selected number     | simply cw instead.                                  |
+    "<C-c>": false,       //  | Copy selection                    | Return to Normal Mode         | Rebound to ctrl + j.                                |
+    "<C-v>": false,       //  | Paste                             | Visual Block Mode             | Rebound to v + <ctrl + v>.                          |
+    // "<Esc>": true,     //  | N/A                               | Escape mode                   | Rebound to ctrl + j.                                |
+    // "<C-u>": true,     //  | N/A                               | Scroll Up 1/2 Page            | Rebound to pageup.                                  |
+    // "<C-d>": true,     //  | Multi-Select Next matching Word   | Scroll Down 1/2 Page          | Rebound to pagedown.                                |
   },
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1
