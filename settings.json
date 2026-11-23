@@ -232,6 +232,17 @@
         "workbench.action.terminal.focus",
         {
           "command": "workbench.action.terminal.sendSequence",
+          "args": { "text": "git commit --amend\r\n" }
+        }
+      ]
+    },
+    {
+      "before": ["g", "a", "m", "a"],
+      "after": ["<Esc>"],
+      "commands": [
+        "workbench.action.terminal.focus",
+        {
+          "command": "workbench.action.terminal.sendSequence",
           "args": { "text": "git commit -a --amend\r\n" }
         }
       ]
