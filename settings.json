@@ -289,26 +289,6 @@
     }
   ],
   "vim.visualModeKeyBindings": [ 
-    // Word Part Left Select
-    {
-      "before": ["<c-a-h>"],
-      "after": ["<leader>", "b"]
-    }, 
-    // Word Part Right Select,
-    {
-      "before": ["<c-a-l>"],
-      "after": ["<leader>", "w"]
-    }, 
-    // Word Left Select,
-    {
-      "before": ["<a-h>"],
-      "after": ["b"]
-    }, 
-    // Word Left Select,
-    {
-      "before": ["<a-l>"],
-      "after": ["e"]
-    }, 
     // Keep Selection after indent (to repeat indent),
     {
       "before": [">"],

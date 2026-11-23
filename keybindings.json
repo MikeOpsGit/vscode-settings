@@ -400,28 +400,29 @@
     },
 
     // * Horizontal Selection
+    // Note: VSCodeVIM fails to proc on ctrl+h/l and ctrl+alt+h/l so those bind need to be put here rather than in settings.json
     {
       "key": "ctrl+h",
       "command": "vim.remap",
-      "args": { "after": ["b"] },
+      "args": { "after": ["b"] }, // Word Left
       "when": "editorTextFocus && vim.mode == 'Visual'"
     },
     {
       "key": "ctrl+l",
       "command": "vim.remap",
-      "args": { "after": ["e"] },
+      "args": { "after": ["e"] }, // Word Right
       "when": "editorTextFocus && vim.mode == 'Visual'"
     },
     {
       "key": "ctrl+alt+h",
       "command": "vim.remap",
-      "args": { "after": ["<leader>", "b"]},
+      "args": { "after": ["<leader>", "b"]}, // Word Part Left
       "when": "editorTextFocus && vim.mode == 'Visual'"
     },
     {
       "key": "ctrl+alt+l",
       "command": "vim.remap",
-      "args": { "after": ["<leader>", "w"]},
+      "args": { "after": ["<leader>", "w"]}, // Word Part Right
       "when": "editorTextFocus && vim.mode == 'Visual'"
     },
 
