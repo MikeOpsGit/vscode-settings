@@ -212,6 +212,18 @@
         }
       ]
     },
+    // Git Push Force
+    {
+      "before": ["g", "p", "f"],
+      "after": ["<Esc>"],
+      "commands": [
+        "workbench.action.terminal.focus",
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": { "text": "git push --force\r\n" }
+        }
+      ]
+    },
     // Git amend
     {
       "before": ["g", "a", "m"],
