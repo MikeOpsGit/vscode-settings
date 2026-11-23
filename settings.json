@@ -309,12 +309,12 @@
       "before": ["<a-l>"],
       "after": ["e"]
     }, 
-    // Repeat indent after mouse selection,
+    // Keep Selection after indent (to repeat indent),
     {
       "before": [">"],
       "after": [">", "g", "v"]
     }, 
-    // Repeat outdent after mouse selection,
+    // Keep Selection after outdent (to repeat outdent),
     {
       "before": ["<"],
       "after": ["<", "g", "v"]
