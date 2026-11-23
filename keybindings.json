@@ -415,13 +415,13 @@
     {
       "key": "ctrl+alt+h",
       "command": "vim.remap",
-      "args": { "after": ["<leader>", "b"], "recursive": true },
+      "args": { "after": ["<leader>", "b"]},
       "when": "editorTextFocus && vim.mode == 'Visual'"
     },
     {
       "key": "ctrl+alt+l",
       "command": "vim.remap",
-      "args": { "after": ["<leader>", "w"], "recursive": true },
+      "args": { "after": ["<leader>", "w"]},
       "when": "editorTextFocus && vim.mode == 'Visual'"
     },
 
