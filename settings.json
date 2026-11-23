@@ -330,7 +330,6 @@
     "<C-e>": false,   // line comment                 | Scroll down 1 line            | I use my mouse instead for code browsing.           |
     "<C-k>": false,   // Quick Bar                    | Vim Digraphs (symbol insert)  | I use alt+numpad instead.                           |
     "<C-w>": false,   // Close tab                    | Change focused split window   | I use my mouse instead for code browsing.           |
-    "<C-d>": false,   // Select Matching Words lines  | Scroll down 1/2 page          | I use my mouse instead for code browsing.           |
     "<C-x>": false,   // Cut selection                | Decrement selected number     | simply cw instead.                                  |
     "<C-c>": false,   // Copy selection               | Return to Normal Mode         | I use ctrl + j instead.                             |
     "<C-v>": false,   // Paste                        | Visual Block Mode             | Now its v + <ctrl + v> to enter visual block mode.  |

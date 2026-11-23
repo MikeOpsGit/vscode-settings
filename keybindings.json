@@ -427,16 +427,38 @@
     },
 
     // * Vertical Movement
-    {
-      "key": "alt+j",
-      "command": "cursorDown",
-      "when": "textInputFocus && vim.mode == 'Insert'"
-    },
-    {
-      "key": "alt+k",
-      "command": "cursorUp",
-      "when": "textInputFocus && vim.mode == 'Insert'"
-    },
+      // Added
+      {
+        "key": "alt+j",
+        "command": "cursorDown",
+        "when": "textInputFocus && vim.mode == 'Insert'"
+      },
+      {
+        "key": "alt+k",
+        "command": "cursorUp",
+        "when": "textInputFocus && vim.mode == 'Insert'"
+      },
+      {
+        "key": "pagedown",
+        "command": "extension.vim_ctrl+d",
+        "when": "editorTextFocus && vim.active"
+      },
+      {
+        "key": "pageup",
+        "command": "extension.vim_ctrl+u",
+        "when": "editorTextFocus && vim.active"
+      },
+      // Removed
+      {
+        "key": "ctrl+u",
+        "command": "-extension.vim_ctrl+u",
+        "when": "editorTextFocus && vim.active"
+      },
+      {
+        "key": "ctrl+d",
+        "command": "-extension.vim_ctrl+d",
+        "when": "editorTextFocus && vim.active"
+      },
 
     // * Move Lines Up / Down
     {
