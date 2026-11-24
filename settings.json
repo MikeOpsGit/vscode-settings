@@ -6,6 +6,7 @@
   "explorer.confirmDragAndDrop": false,
   "search.useIgnoreFiles": true,
   "diffEditor.ignoreTrimWhitespace": true,
+  "window.enableMenuBarMnemonics": false,
   "terminal.integrated.commandsToSkipShell": [
     "kilo-code.new.agentManagerOpen",
     "kilo-code.new.agentManager.showTerminal",
