@@ -28,6 +28,12 @@
     }
   },
 
+  // * AI
+  {
+    "key": "alt+\\",
+    "command": "editor.action.inlineSuggest.trigger"
+  },
+
   // * Git
     // * Added
     {

@@ -159,6 +159,7 @@
       "scminput": false
     },
     "chat.viewSessions.orientation": "stacked",
+    "editor.inlineSuggest.enabled": false,
     // Kilo Code
     "kilo-code.new.agentWorkStyle": "skipped",
 
