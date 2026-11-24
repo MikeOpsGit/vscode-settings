@@ -172,6 +172,7 @@
     // Search use Ignore
     {
       "before": ["i", "o", "n"],
+      
       "after": ["<Esc>"],
       "commands": [
         {
@@ -187,6 +188,7 @@
     },
     {
       "before": ["i", "o", "f", "f"],
+      
       "after": ["<Esc>"],
       "commands": [
         {
@@ -203,6 +205,7 @@
     // Git Push
     {
       "before": ["g", "p"],
+      
       "after": ["<Esc>"],
       "commands": [
         "workbench.action.terminal.focus",
@@ -215,6 +218,7 @@
     // Git Push Force
     {
       "before": ["g", "f", "p"],
+      
       "after": ["<Esc>"],
       "commands": [
         "workbench.action.terminal.focus",
@@ -227,6 +231,7 @@
     // Git amend
     {
       "before": ["g", "a", "m"],
+      
       "after": ["<Esc>"],
       "commands": [
         "workbench.action.terminal.focus",
@@ -238,6 +243,7 @@
     },
     {
       "before": ["g", "a", "a", "m"],
+      
       "after": ["<Esc>"],
       "commands": [
         "workbench.action.terminal.focus",
@@ -250,6 +256,7 @@
     // Git Status
     {
       "before": ["g", "s"],
+      
       "after": ["<Esc>"],
       "commands": [
         "workbench.action.terminal.focus",
@@ -260,78 +267,33 @@
       ]
     },
     // SCM sidebar
-    {
-      "before": ["g", "w"],
-      "after": ["<Esc>"],
-      "commands": [
-        "workbench.view.scm",
-      ]
-    },
+    { "before": ["g", "w"],         /* -> */ "after": ["<Esc>"], "commands": ["workbench.view.scm"] },
     // Serial Monitor
-    {
-      "before": ["s", "m"],
-      "after": ["<Esc>"],
-      "commands": [
-        "workbench.view.extension.vscode-serial-monitor-tools",
-      ]
-    },
+    { "before": ["s", "m"],         /* -> */ "after": ["<Esc>"], "commands": ["workbench.view.extension.vscode-serial-monitor-tools"] },
     // Git Graph
-    {
-      "before": ["g", "g"],
-      "after": ["<Esc>"],
-      "commands": [
-        "git-graph.view",
-      ]
-    },
+    { "before": ["g", "g"],         /* -> */ "after": ["<Esc>"], "commands": ["git-graph.view"] },
     // log Viewer
-    {
-      "before": ["l", "o", "g"],
-      "after": ["<Esc>"],
-      "commands": [
-        "workbench.view.extension.log-viewer",
-      ]
-    },
+    { "before": ["l", "o", "g"],    /* -> */ "after": ["<Esc>"], "commands": ["workbench.view.extension.log-viewer"] },
     // Escape replacement
-    {
-      "before": ["<c-j>"],
-      "commands": ["extension.vim_escape"]
-    },
+    { "before": ["<c-j>"],          /* -> */ "commands": ["extension.vim_escape"] },
   ],
   "vim.normalModeKeyBindings": [
     // Escape replacement
-    {
-      "before": ["<c-j>"],
-      "commands": ["extension.vim_escape"]
-    },
+    { "before": ["<c-j>"],          /* -> */ "commands": ["extension.vim_escape"] },
   ],
   "vim.insertModeKeyBindings": [
     // Escape replacement
-    {
-      "before": ["<c-j>"],
-      "commands": ["extension.vim_escape"]
-    }
+    { "before": ["<c-j>"],          /* -> */ "commands": ["extension.vim_escape"] }
   ],
   "vim.visualModeKeyBindings": [ 
     // Keep Selection after indent (to repeat indent),
-    {
-      "before": [">"],
-      "after": [">", "g", "v"]
-    }, 
+    { "before": [">"],              /* -> */ "after": [">", "g", "v"] }, 
     // Keep Selection after outdent (to repeat outdent),
-    {
-      "before": ["<"],
-      "after": ["<", "g", "v"]
-    },
+    { "before": ["<"],              /* -> */ "after": ["<", "g", "v"] },
     // Paste and replace (without storing replaced text in buffer)
-    {
-      "before": ["<leader>", "p"],
-      "after": ["\"", "_", "d", "P"]
-    },
+    { "before": ["<leader>", "p"],  /* -> */ "after": ["\"", "_", "d", "P"] },
     // Escape replacement
-    {
-      "before": ["<c-j>"],
-      "commands": ["extension.vim_escape"]
-    },
+    { "before": ["<c-j>"],          /* -> */ "commands": ["extension.vim_escape"] },
   ],
   "vim.leader": "<space>",
   "vim.handleKeys": {     //  | Regained Vanilla Function         | Lost Vim Function             | Reason                                              |
