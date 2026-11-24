@@ -169,6 +169,7 @@
   "vim.incsearch": true,
   "vim.useSystemClipboard": false,
   "vim.useCtrlKeys": true,
+  "vim.surround": true,
   "vim.commandLineModeKeyBindings": [
     // Search use Ignore
     {
